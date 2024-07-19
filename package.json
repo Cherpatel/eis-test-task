@@ -1,0 +1,77 @@
+{
+    "name": "react-config",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack serve",
+        "build": "webpack --env mode=production",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "lint:css": "stylelint '**/*.{css,scss,sass}'",
+        "lint:css:fix": "stylelint '**/*.{css,scss,sass}' --fix",
+        "test": "jest"
+    },
+    "author": "cherpatel",
+    "license": "ISC",
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.4.0",
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
+        "@stylistic/eslint-plugin": "^2.2.1",
+        "@svgr/webpack": "^8.1.0",
+        "@testing-library/dom": "^10.1.0",
+        "@testing-library/react": "^16.0.0",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.14.1",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@types/webpack": "^5.28.5",
+        "@typescript-eslint/eslint-plugin": "^7.12.0",
+        "@typescript-eslint/parser": "^7.12.0",
+        "autoprefixer": "^10.4.19",
+        "css-loader": "^7.1.2",
+        "eslint": "^8.57.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-react": "^7.34.2",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-sort-destructure-keys": "^2.0.0",
+        "eslint-plugin-sort-keys-fix": "^1.1.2",
+        "fork-ts-checker-webpack-plugin": "^9.0.2",
+        "html-webpack-plugin": "^5.6.0",
+        "jest": "^29.7.0",
+        "mini-css-extract-plugin": "^2.9.0",
+        "postcss-loader": "^8.1.1",
+        "react-refresh-typescript": "^2.0.9",
+        "sass": "^1.77.4",
+        "sass-loader": "^14.2.1",
+        "source-map-loader": "^5.0.0",
+        "style-loader": "^4.0.0",
+        "stylelint": "^16.6.1",
+        "stylelint-config-clean-order": "^6.0.0",
+        "stylelint-config-standard-scss": "^13.1.0",
+        "ts-jest": "^29.1.4",
+        "ts-loader": "^9.5.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^7.12.0",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.4"
+    }
+}
