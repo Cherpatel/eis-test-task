@@ -1,0 +1,29 @@
+.tableCell {
+    display: flex;
+    align-items: center;
+
+    padding: 8px 12px;
+
+    &.center {
+        justify-content: center;
+    }
+
+    &.gray {
+        color: var(--text-additional-color);
+    }
+
+    &:has(button) {
+        padding: 0 12px;
+    }
+    
+    &:first-of-type {
+        min-width: 48px;
+    }
+}
+
+.tableHeader .tableCell {
+    padding: 8px 12px;
+
+    color: var(--text-additional-color);
+    text-align: left;
+}

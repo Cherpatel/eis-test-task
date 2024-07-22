@@ -1,0 +1,37 @@
+.paginationItem {
+    cursor: pointer;
+    user-select: none;
+
+    display: flex;
+    display: block;
+    align-items: center;
+
+    min-width: 32px;
+    height: 32px;
+    padding: 7px 11px;
+
+    line-height: 16px;
+    color: black;
+    text-decoration: none;
+
+    border: 1px solid #CED5DE;
+    border-radius: 6px;
+
+    transition: 0.4s;
+
+    &.plain {
+        cursor: default;
+
+        padding: 7px 9px;
+    }
+
+    &:not(.plain):hover {
+        background-color: #F2F5F8;
+    }
+
+    &.active {
+        cursor: default;
+
+        background-color: #F2F5F8;
+    }
+}

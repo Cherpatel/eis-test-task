@@ -10,8 +10,12 @@
         "baseUrl": "./",
         "paths": {
             "@components/*": ["src/components/*"],
+            "@controllers/*": ["src/controllers/*"],
+            "@models/*": ["src/models/*"],
+            "@stores/*": ["src/stores/*"],
             "@assets/*": ["src/assets/*"],
             "@config/*": ["config/*"],
+            "@libs/*": ["src/libs/*"],
         }
     },
     "ts-node": {

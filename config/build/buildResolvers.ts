@@ -7,6 +7,10 @@ export default function buildResolvers(options: BuildOptions): Configuration["re
             assets,
             components,
             config,
+            controllers,
+            libs,
+            models,
+            stores,
         },
     } = options;
 
@@ -15,6 +19,10 @@ export default function buildResolvers(options: BuildOptions): Configuration["re
             "@assets": assets,
             "@components": components,
             "@config": config,
+            "@controllers": controllers,
+            "@libs": libs,
+            "@models": models,
+            "@stores": stores,
         },
         extensions: [".tsx", ".jsx", ".ts", ".js"],
     };

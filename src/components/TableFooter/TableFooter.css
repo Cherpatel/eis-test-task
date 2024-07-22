@@ -1,0 +1,10 @@
+.tableFooter {
+    display: flex;
+    justify-content: end;
+
+    width: 100%;
+    height: fit-content;
+    padding: 8px 12px;
+
+    background-color: white;
+}

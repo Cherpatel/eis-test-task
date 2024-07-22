@@ -1,0 +1,9 @@
+.tableGrid {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: auto 120px 160px repeat(2, auto) 1fr 1fr 72px;
+    grid-template-rows: min-content 1fr min-content;
+    flex: 1 1 auto;
+
+    width: 100%;
+}

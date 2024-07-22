@@ -1,0 +1,22 @@
+.trashButton {
+    cursor: pointer;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    background: #FEE3E3;
+    border: none;
+    border-radius: 8px;
+
+    &:hover {
+        background: #FED7D7;
+
+        & > svg {
+            fill: #9B2C2C;
+        }
+    }
+}

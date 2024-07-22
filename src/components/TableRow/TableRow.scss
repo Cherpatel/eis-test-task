@@ -1,0 +1,21 @@
+.tableRow {
+    display: grid;
+    grid-column: 1/9;
+    grid-template-columns: subgrid;
+    
+    padding: 6px 0;
+
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #E0E5EB;
+    }
+}
+
+.tableBody .tableRow:hover {
+    cursor: pointer;
+
+    background-color: #F7F8F9;
+
+    & .trashButton {
+        display: flex;
+    }
+}

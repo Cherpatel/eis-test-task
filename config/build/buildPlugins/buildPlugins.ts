@@ -1,3 +1,4 @@
+import { dotenvPluginInstance } from "./dotenvPluginInstance";
 import { forkTsCheckerWebpackPluginInstance } from "./forkTsCheckerWebpackPlugin";
 import { htmlWebpackPluginInstance } from "./htmlWebpackPlugin";
 import { miniCssExtractPluginInstance } from "./miniCssExtractPlugin";
@@ -11,7 +12,10 @@ export default function buildPlugins(options: BuildOptions): Configuration["plug
         isDev, isProd,
     } = options;
 
-    const plugins: Configuration["plugins"] = [ htmlWebpackPluginInstance(options) ];
+    const plugins: Configuration["plugins"] = [
+        htmlWebpackPluginInstance(options),
+        dotenvPluginInstance(options),
+    ];
 
     if (isProd) {
         const prodPlugins = [ miniCssExtractPluginInstance() ];

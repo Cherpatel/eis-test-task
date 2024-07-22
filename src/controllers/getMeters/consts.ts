@@ -1,0 +1,1 @@
+export const METERS_LIMIT = 20;

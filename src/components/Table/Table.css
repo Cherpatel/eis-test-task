@@ -1,0 +1,13 @@
+.table {
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+
+    width: 100%;
+
+    font-size: 14px;
+
+    border: 1px solid #E0E5EB;
+    border-radius: 12px;
+}

@@ -1,0 +1,7 @@
+.tableHeader {
+    display: grid;
+    grid-column: 1/9;
+    grid-template-columns: subgrid;
+
+    background-color: #F0F3F7;
+}

@@ -1,0 +1,11 @@
+.tableBody {
+    overflow: hidden auto;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-column: 1/9;
+    grid-template-columns: subgrid;
+    
+    background-color: white;
+    border: 1px solid #E0E5EB;
+    border-width: 1px 0;
+}

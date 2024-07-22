@@ -1,11 +1,16 @@
 export type BuildPaths = {
+    models: string;
+    stores: string;
+    assets: string;
+    components: string;
+    config: string;
+    controllers: string;
+    env: string;
     html: string;
     entry: string;
     output: string;
-    components: string;
-    assets: string;
-    config: string;
     favicon: string;
+    libs: string;
 };
 
 export type BuildMode = "production" | "development";

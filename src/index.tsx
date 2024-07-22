@@ -1,7 +1,10 @@
 import { createRoot } from "react-dom/client";
 
-import App from "./components/App/App";
+import App from "./App";
 
+import StoreProvider from "@components/StoreProvider/StoreProvider";
+
+import "./index.scss";
 
 const root = document.getElementById("root");
 
@@ -11,4 +14,4 @@ if (!root) {
 
 const container = createRoot(root);
 
-container.render(<App />);
+container.render(<StoreProvider><App /></StoreProvider>);
